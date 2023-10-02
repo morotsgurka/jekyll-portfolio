@@ -1,0 +1,27 @@
+<div class="relative h-full">
+  <div class="flex flex-col sticky top-14 items-center px-12 py-9 md:px-10 md:py-14 bg-white rounded-figmabox dark:bg-card-dark">
+    <img class="rounded-full mb-4 md:mb-9" src="{{ site.personalinfo.image | relative_url }}" alt="{{ site.personalinfo.name_first }}"/>
+    <a class="font-portfolio font-[400] text-dim-writing-light mb-1 md:mb-1">
+      Hi there, my name is
+    </a>
+    <div class="flex flex-row space-x-2 font-portfolio font-[600] text-3xl dark:text-white mb-2 md:mb-1">
+      <h2>{{ site.personalinfo.name_first }}</h2>
+      <h2 class="text-accent-1-light">{{ site.personalinfo.name_last }}</h2>
+    </div>
+    <p class="text-dim-writing-light font-portfolio font-[400] leading-relaxed">
+      <a class="text-accent-1-light">and i am a {{ site.personalinfo.jobtitle }}</a>
+      who loves to <a class=" text-accent-1-light">automate stuff</a>
+      and solve problems.
+    </p>
+    
+    <div class="flex mt-5 md:mt-10 space-x-10 md:space-x-5">
+      {% for item in site.data.social %}
+        <a class="h-10 w-10 " href="{{ item.link }}">
+          <svg class=" fill-accent-1-light hover:scale-110 transition duration-300 ease-in-out" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" ><title>{{item.name}}</title>
+            <path d="{{ item.svg-path }}"/>
+          </svg>
+        </a>
+        {% endfor %}
+    </div>
+  </div>
+</div>

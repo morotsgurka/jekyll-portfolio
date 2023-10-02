@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    {% include meta.html %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    
+    <link rel="icon" href="{{ '/favicon.png' | relative_url }}">
+    <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
+  </head>
+  <body class="page {{page.bodyClass}} scroll-smooth bg-page-light dark:bg-page-dark">
+    <div class="container mx-auto">
+      {{content}}
+    </div>
+    {% include google-analytics.html %}
+  </body>
+</html>

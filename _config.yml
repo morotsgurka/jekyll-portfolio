@@ -1,0 +1,51 @@
+baseurl: "/"
+permalink: pretty
+title: "Gustav Mårdestam Portfolio"
+collections_dir: collections
+markdown: kramdown
+highlighter: rouge
+timezone: Europe/Stockholm
+encoding: utf-8
+
+google_analytics_id: false # replace with "UA-XXXX"
+
+personalinfo:
+  name_first: "Gustav"
+  name_last: "Mårdestam"
+  jobtitle: "Technical Artist"
+  image: "assets/images/profile-picture/gustav-mardestam.jpg"
+  linkedin: "https://www.linkedin.com/in/gustav-mardestam-2b1b0b1a4/"
+  mail: "gustav.mardestam@gmail.com"
+
+other:
+  blogname: "PROJECTS"
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: projects
+  - scope:
+      path: "images"
+    values:
+      image: true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.babel.js
+  - LICENSE.md
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - src
+  - tailwind.config.js
+  - netlify.toml

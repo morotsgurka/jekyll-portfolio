@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<div class="flex flex-col mt-5 md:mt-12 mx-5 md:mx-0">
+  <div class="flex flex-row mb-4 md:inline">
+    <div class="w-1/4 mr-12 md:inline-block hidden">
+    <h2 class="md:inline-block hidden text-sm font-portfolio text-accent-1-light">
+    </h2>
+    </div>
+    <div class="flex w-3/4 md:inline">
+      <h1 class="md:inline hidden heading text-6xl font-portfolio font-[600] text-accent-1-light">
+        {{ page.title }}
+      </h1>
+    </div>
+  </div>
+  <div class="flex flex-col md:flex-row space-y-7 md:space-y-0">
+    <div class="w-full md:w-1/4 mr-12">
+      {% include person-card.html %}
+    </div> 
+    <div class="flex flex-col w-full md:w-3/4">
+      <div class="flex flex-col w-full md:hidden">
+        <h1 class="md:hidden heading text-4xl font-portfolio text-accent-1-light">
+          {{ page.title }}
+        </h1>
+        <h2 class="md:hidden heading text-2xl font-portfolio text-dim-writing-light">
+          {{ page.client }}
+        </h2>
+      </div>
+      <!-- <img class="rounded-figmabox flex w-1/2 mb-3" alt="{{ project.title }}" src="/{{ project.thumbnail }}"/> -->
+      <main class="prose scroll-smooth prose-p:font-portfolio prose-p:font-[400] prose-h2:font-portfolio prose-h3:font-portfolio prose-h1:font-portfolio prose-img:rounded-figmabox dark:prose-invert">
+          {{ content }}
+    </main>
+    </div>
+  </div>
+</div>
