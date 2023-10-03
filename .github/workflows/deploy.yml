@@ -35,7 +35,7 @@ jobs:
       uses: crazy-max/ghaction-github-pages@v4
       with:
        build_dir: _site/
-       domain: www.mardestam.com # Change this to your domain name
+       fqdn: www.mardestam.com # Change this to your domain name
       env:
        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
