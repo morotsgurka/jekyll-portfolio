@@ -7,7 +7,7 @@
           <source src="{{ project.videothumb | relative_url }}" type="video/mp4">
         </video>
       {% else %}
-        <img class="object-cover rounded-figmabox mb-3 hover:opacity-70 hover:scale-105 hover:drop-shadow-2xl transition duration-300 ease-in-out" alt="{{ project.title }}" src="{{ project.thumbnail | relative_url }}"/>
+        <img class="object-cover rounded-figmabox mb-3 hover:opacity-70 hover:scale-105 hover:drop-shadow-2xl transition duration-300 ease-in-out" loading="lazy" alt="{{ project.title }}" src="{{ project.thumbnail | relative_url }}"/>
       {% endif %}
     </a>
   </div>
