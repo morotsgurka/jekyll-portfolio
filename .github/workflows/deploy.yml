@@ -16,13 +16,13 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 3.1.3 # Specify your Ruby version
+        ruby-version: .ruby-version # uses the Ruby version specified in the .ruby-version file
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 14 # Specify your Node.js version
+        node-version-file: .nvmrc # uses the Node.js version specified in the .nvmrc file
         cache: 'npm' # enables caching of npm dependencies
     - run: npm ci
 
