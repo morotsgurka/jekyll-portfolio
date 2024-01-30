@@ -1,0 +1,28 @@
+name: Test develop build in pull request
+
+on: pull_request
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+        ruby-version: .ruby-version # uses the Ruby version specified in the .ruby-version file
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version-file: .nvmrc # uses the Node.js version specified in the .nvmrc file
+        cache: 'npm' # enables caching of npm dependencies
+    - run: npm ci
+
+    - name: Build site for development
+      run: npm run build:dev
+
