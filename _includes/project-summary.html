@@ -12,14 +12,14 @@
     </a>
   </div>
 
-  <div class="flex flex-col md:flex-row justify-between">
-    <a href="{{ project.url | relative_url }}" class="flex flex-row gap-1 font-portfolio font-[300] justify-center text-xl md:text-base">
-      <h2 class="mb-1 text-accent-1-light">{{ project.title }},</h2>
-      <h2 class="mb-1 dark:text-white">{{ project.client }}</h2>
+  <div class="flex flex-col justify-between">
+    <a href="{{ project.url | relative_url }}" class="flex flex-row gap-1 font-portfolio font-[300] justify-center text-base md:text-base 2xl:text-xl">
+      <h2 class="text-accent-1-light">{{ project.title }},</h2>
+      <h2 class="dark:text-white">{{ project.client }}</h2>
     </a>
-    <div class="flex justify-center space-x-1 flex-row font-portfolio font-[300] dark:text-dim-writing-light">
-      <h2 class="">TECH:</h2>
-      <h2 class="">{{ project.tech }}</h2>
+    <div class="flex justify-center space-x-1 flex-row font-portfolio font-[300] dark:text-dim-writing-light text-sm md:text-sm 2xl:text-lg">
+      <h2>TECH:</h2>
+      <h2>{{ project.tech }}</h2>
     </div>
   </div>
 </div>
