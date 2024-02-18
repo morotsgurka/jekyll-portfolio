@@ -35,6 +35,11 @@ module.exports = {
     extend: {
       grayscale: ["hover", "focus"],
       margin: ["last"],
+      translate: ["group-hover"],
+      fill: ["group-hover"],
+      textColor: ["group-hover"],
+      scale: ["group-hover",],
+      transformOrigin: ["group-hover"],
     },
     container: [],
   },
