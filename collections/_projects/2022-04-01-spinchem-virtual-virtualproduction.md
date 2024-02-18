@@ -13,7 +13,7 @@ videothumb: "assets/videos/Thumb_Spinchem.mp4"
 SpinChem approaced us to create a series of short commercial videos showcasing their products and their many use cases. They wanted to reach more customers and to showcase their products in a more visually engaging way.
 
 ## Virtual Virtual Production?
-We took inspiration from the virtual production techniques that became viral from Disney's Mandalorian series. Where a large LED wall was used in the backgroup to create a realistic backdrop that also could be used to cast realistic reflections lighting onto the actor. We took this idea and created a large curved backdrop which we placed inside Unreal Engine 5, creating a virtual production set inside a virtual environment. Virtual Virtual Production. This allowed us to re-use the same environment and camera movements to create multiple videos with different products and use cases without having to build a new set each time.
+We took inspiration from the virtual production techniques that became viral from Disney's Mandalorian series. Where a large LED wall was used in the background to create a real-time realistic backdrop that also could be used to cast realistic reflections lighting onto the actor. We took this concept and created a large curved backdrop which we placed inside Unreal Engine 5, creating a virtual production set inside a virtual environment. This allowed us to re-use the same environment and camera movements to create multiple videos with different products and use cases without having to build a new set each time.
 <img class="object-cover rounded-figmabox mb-3 " loading="lazy" alt="SpinChem Slide Gif" src="/assets/videos/Spinchem_Extra_BTS.gif"/>
 
 ## My role
@@ -25,7 +25,7 @@ Here is a short behind the scenes video showing how the camera moves were made u
 {% include embed-youtube-video.html videoKey="kPL1B64K5PQ" videoTitle="Project | SpinChem UE5 - Behind The Scenes"%}
 
 ## The Result
-The result of this first stage was four short videos showcasing different products and use cases and the virtual environment which could be used to easily make more. Or to be used in other usecases such as XR or presentations. Two of these videos are linked below:
+The result of this first stage was four short videos showcasing different products and use cases and the virtual environment which could be used to easily make more. Or to be used in other ways such as XR-applications or presentations. Two of these videos are linked below:
 
 
 <div class="flex flex-col gap-6 w-full">
