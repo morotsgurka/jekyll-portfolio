@@ -26,6 +26,7 @@ A starter kit for using [Tailwind](https://tailwindcss.com) with [Jekyll](https:
 * [Ruby](https://www.ruby-lang.org/en/) (3.1.3. Use rbenv to manage ruby installs)
 
 ## Get started
+* `nvm install` to install/select the correct node version from the .nvmrc file
 * `bundle install` to install Ruby gems
 * `npm ci` to install npm packages listed in `package-lock.json`
 * `npm run start` or `npm run dev` to compile the site with development settings and run BrowserSync
