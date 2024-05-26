@@ -22,7 +22,7 @@ A starter kit for using [Tailwind](https://tailwindcss.com) with [Jekyll](https:
 * [Bundler](http://bundler.io/) (2.4.2)
 * [Jekyll](https://jekyllrb.com/)
 * [Node.js](https://nodejs.org/en/)
-* [npm](https://www.npmjs.com/) (9.8.0 or 10.1.0 Use nvm to manage npm)
+* [npm](https://www.npmjs.com/) (Use nvm to manage npm)
 * [Ruby](https://www.ruby-lang.org/en/) (3.1.3. Use rbenv to manage ruby installs)
 
 ## Get started
