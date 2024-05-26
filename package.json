@@ -38,7 +38,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
+  "optionalDependencies": {
     "fsevents": "^2.3.3"
   }
 }

@@ -27,7 +27,7 @@ jobs:
       with:
         node-version-file: .nvmrc # uses the Node.js version specified in the .nvmrc file
         cache: 'npm' # enables caching of npm dependencies
-    - run: npm ci
+    - run: npm ci --no-optional
 
     - name: Build site for production
       run: npm run build:production
